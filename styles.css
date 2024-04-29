@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Play";
+}
+
+nav {
+    background-color: hsl(40, 100%, 50%);
+    color: hsl(209, 30%, 26%);
+    padding: 0 0 10px;
+    font-weight: 700;
+}
+
+.navTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: hsl(209, 30%, 26%);
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.searchIcon {
+    position:relative;
+    left: 50px;
+}
+
+.searchInput {
+    border: none;
+    background-color: transparent;
+
+}
+
+.searchInput::placeholder {
+    color: rgb(209, 211, 211);
+}
+
+.limitedOffer {
+    font-size: 20px;
+    border-bottom: 2px solid hsl(209, 30%, 26%);
+    cursor: pointer;
+}
+
+.navBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: chocolate;
+}
+
+.menuItem {
+    margin-right: 50px;
+    cursor: pointer;
+    color: hsl(209, 30%, 26%);
+    font-weight: 400;
+}
+
+.slider {
+    background: url("img/background1.jpg");
+    overflow: hidden;
+}
+
+.sliderWrapper {
+    display: flex;
+    width: 500vw;
+    transition: all 1s ease-in-out;
+}
+
+
+.sliderItem {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slideBg {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.sliderImg {
+    z-index: 1;
+    height: 75%;
+    filter: drop-shadow(0 10px 10px black);
+}
+
+.sliderTitle {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    color: white;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    z-index: 1;
+}
+
+.sliderPrice {
+    position: absolute;
+    padding: 10px;
+    top: 10%;
+    left: 10%;
+    color: white;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px 0 10px 0;
+    background-color: rgba(14, 13, 13, 0.74);
+}
+
+.buyButton {
+    position: absolute;
+    padding: 10px;
+    top: 50%;
+    right: 10%;
+    color: white;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px 0 10px 0;
+    background-color: rgba(255, 0, 0, 0.74);
+}
+
+.buyButton:hover {
+    background-color: white;
+    color: rgba(255, 0, 0, 0.74);
+}
+
+.sliderItem:nth-child(1) .slideBg {
+    background-color: orange;
+}
+
+.sliderItem:nth-child(2) .slideBg {
+    background-color: rgb(2, 167, 2);
+}
+
+.sliderItem:nth-child(3) .slideBg {
+    background-color: rgb(68, 0, 255);
+}
+
+.sliderItem:nth-child(4) .slideBg {
+    background-color: rgb(255, 0, 221);
+}
+
+.sliderItem:nth-child(5) .slideBg {
+    background-color: rgb(102, 255, 0);
+}
+
+.sliderItem:nth-child(1) .sliderPrice {
+    color: orange;
+}
+
+.sliderItem:nth-child(2) .sliderPrice {
+    color: rgb(2, 167, 2);
+}
+
+.sliderItem:nth-child(3) .sliderPrice {
+    color: rgb(68, 0, 255);
+}
+
+.sliderItem:nth-child(4) .sliderPrice {
+    color: rgb(255, 0, 221);
+}
+
+.sliderItem:nth-child(5) .sliderPrice {
+    color: rgb(102, 255, 0);
+}
